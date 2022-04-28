@@ -1,0 +1,40 @@
+{
+  "name": "fresheats",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Get Fresh and Healthy Foods delivered to your doorstep.",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "sails": "^1.4.3",
+    "sails-hook-apianalytics": "^2.0.3",
+    "sails-hook-organics": "^2.0.0",
+    "sails-hook-orm": "^3.0.2",
+    "sails-hook-sockets": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "grunt": "1.0.4",
+    "htmlhint": "0.11.0",
+    "lesshint": "6.3.6",
+    "nodemon": "^2.0.15",
+    "sails-hook-grunt": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonymous node/sails user/sailsdemo.git"
+  },
+  "author": "Chukwunonso Kanu",
+  "license": "MIT",
+  "engines": {
+    "node": "^12.19"
+  }
+}

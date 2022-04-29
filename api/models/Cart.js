@@ -1,5 +1,5 @@
 /**
- * Category.js
+ * Cart.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -10,9 +10,13 @@ module.exports = {
   attributes: {
     products: {
       collection: 'product',
-      via: 'productCategory'
+      via: 'addedTo'
     },
-    
+
+    owner:{
+      model:  'User',
+      unique: true
+    }
   },
 
 };
